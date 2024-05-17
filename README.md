@@ -34,9 +34,9 @@ CREATE TABLE users (
 CREATE TABLE movies (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT NOT NULL,
-overview TEXT NOT NULL,
-date TEXT NOT NULL,
-image  TEXT NOT NULL,
-score TEXT NOT NULL,
-FOREIGN KEY (userId) REFERENCES users(id)
+   overview TEXT NOT NULL,
+   date TEXT NOT NULL,
+   image  TEXT NOT NULL,
+   score TEXT NOT NULL,
+   FOREIGN KEY (userId) REFERENCES users(id)
 );
